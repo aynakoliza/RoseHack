@@ -1,4 +1,4 @@
-let socket = new WebSocket('ws://rosehack-server.herokuapp.com/');
+let socket = new WebSocket('wss://rosehack-server.herokuapp.com/');
 
 const messageContainer = document.getElementById('send-container')
 
