@@ -1,8 +1,10 @@
 import { WebSocketServer } from 'ws';
 
-const wss = new WebSocketServer({ port: 5500 });
+var port = process.env.PORT || 5500;
 
-console.log('server online port 5500');
+const wss = new WebSocketServer({ port: port });
+
+console.log('Server online - port:', port);
 
 wss.on('connection', ws => {
 	ws.on('open', function() {
