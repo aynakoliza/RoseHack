@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    background-color: #151515;
+    color: white;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    place-content: center;
+    background-image: url('https://pbblogassets.s3.amazonaws.com/uploads/2020/03/23001949/Retrowave-Background-Loop-Tutorial-Floor-Grid.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw
+}
+
+header h1 {
+    margin-top: -100px;
+}
+
+header, header:before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url();
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+header * {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+}
+
+.cursor{
+    z-index: 999;
+    position: fixed;
+    background: #2696E8;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #2696E8,
+                0 0 60px #2696E8,
+                0 0 100px #2696E8;
+    animation: colors 5s infinite;
+
+}
+
+@keyframes colors{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.cursor:before{
+    content:  '';
+    position: absolute;
+    background: #2696E8;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+}
+
+
+/* <div class="container">
+    <img src = "https://images-ext-2.discordapp.net/external/W9yiNNZ8h_65z6Juhq39JtbV4iKl42CMj-7SVYJSq6E/%3Ftoken%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM3MTU3ZjRiLTAyMzAtNDM3Ny1iMTAwLTY3ZTc4YzVjMzY5ZFwvZGJnbHdoOS04ODZlOGEzZS1iZTA2LTRjODgtODZjZS1jY2MzNGM2M2I5MjIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.CHPrX1IBHaUDCdVVvyX30AGt-347albJPk59cMirmF0/https/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/37157f4b-0230-4377-b100-67e78c5c369d/dbglwh9-886e8a3e-be06-4c88-86ce-ccc34c63b922.png style = width: 100%;">
+    <div class ="centered">centered</div>
+</div> */
+    
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-transform: lowercase;
+    font-size: 50px;
+    margin: 10px;
+    font-family: conthrax;
+    text-align: center;
+    
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 10px;
+    font-family: conthrax;
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+    
+}
+
+
+p {
+    text-transform: lowercase;
+    font-size: 00px;
+    margin: 10px;
+    font-family: conthrax;
+    text-align: center;
+    
+}
+
+a {
+    text-align: center;
+}
+
+.btn {
+    padding: 10px;
+    box-shadow: 0px 0px 5px 1px black;
+    background-color: #202020;
+    border: none;
+    color: white;
+    transition: background-color 0.75s;
+    font-family: conthrax;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.btn:hover {
+    background-color: rgb(20, 13, 49);
+    color: rgb(255, 106, 235);
+    
+}
+
+.blue {
+    font-size: 20px;
+    display: inline-block;
+    background: linear-gradient(45 deg, purple, black);
+    padding: 10px 20px;
+    box-sizing: border-box
+
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    background-color: rgb(67, 13, 71);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+/*container to hold image and text*/
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-align {
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 50%;
+
+    
+
+    
+}
+
+.one-day{
+    text-align: center;
+    font-family: conthrax;
+}
+
+.container {
+    animation: transitionIn 0.75s;
+}
+
